@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build a Lesson · STEM Lesson Gallery</title>
+  <meta name="description" content="Tell it about your camp group and get a fresh, themed STEM lesson ready to present.">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="brand" href="index.html" aria-label="STEM Lesson Gallery home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">STEM Lesson Gallery</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="library.html">Library</a>
+      <a class="nav-cta" href="generator.html" aria-current="page">Build a lesson</a>
+    </nav>
+  </header>
+
+  <main class="gen">
+    <section class="lib-head">
+      <p class="eyebrow">Lesson generator</p>
+      <h1>Tell us about your group.</h1>
+      <p class="section-sub">We&rsquo;ll mix a mission, a theme and a featured scientist into a fresh lesson, and skip ones you&rsquo;ve already used.</p>
+    </section>
+
+    <div class="gen-grid">
+      <!-- ============ FORM ============ -->
+      <form class="gen-form" id="gen-form">
+        <fieldset>
+          <legend>Age group</legend>
+          <div class="seg" id="f-age"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Topic</legend>
+          <div class="seg" id="f-topic"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>What is the group into?</legend>
+          <div class="seg" id="f-theme"></div>
+        </fieldset>
+
+        <div class="gen-row">
+          <fieldset>
+            <legend>Session length</legend>
+            <div class="seg" id="f-min"></div>
+          </fieldset>
+
+          <fieldset class="size-field">
+            <legend><label for="f-size">Group size</label></legend>
+            <div class="stepper">
+              <button type="button" data-step="-1" aria-label="Fewer campers">&minus;</button>
+              <input id="f-size" name="size" type="number" min="2" max="60" value="16" inputmode="numeric">
+              <button type="button" data-step="1" aria-label="More campers">+</button>
+            </div>
+          </fieldset>
+        </div>
+
+        <button class="btn btn-primary gen-submit" type="submit">Build my lesson</button>
+        <p class="gen-note" id="gen-note" aria-live="polite"></p>
+      </form>
+
+      <!-- ============ RESULT ============ -->
+      <section class="gen-result" id="gen-result" aria-live="polite">
+        <div class="result-empty">
+          <div class="result-empty-art" aria-hidden="true"></div>
+          <p>Your lesson will show up here.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ HISTORY ============ -->
+    <section class="history" id="history" hidden>
+      <div class="history-head">
+        <h2>Already used in this browser</h2>
+        <button type="button" class="link-btn" id="clear-history">Clear history</button>
+      </div>
+      <p class="section-sub">The generator skips these. Clear the list to let them come back.</p>
+      <ul class="history-list" id="history-list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>STEM Lesson Gallery &middot; a demo by a CMU STEM Ambassador.</p>
+    <p class="fine">Independent student project. Not an official Carnegie Mellon University website.</p>
+  </footer>
+
+  <script src="js/lessons.js"></script>
+  <script src="js/generator.js"></script>
+</body>
+</html>

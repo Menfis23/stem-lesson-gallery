@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STEM Lesson Gallery</title>
+  <meta name="description" content="Game-like, themed STEM lessons for summer camp groups ages 5 to 21. Pick an age group, a topic and what your group is into, and get a ready-to-run lesson.">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a class="brand" href="index.html" aria-label="STEM Lesson Gallery home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">STEM Lesson Gallery</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="library.html">Library</a>
+      <a class="nav-cta" href="generator.html">Build a lesson</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CMU STEM Ambassadors &middot; Summer Camp</p>
+        <h1>Camp lessons that feel like a <span class="mark">game</span>, not a class.</h1>
+        <p class="lede">
+          A gallery of ready-to-run STEM lessons for campers ages 5 to 21.
+          Pick the age group, the topic, and what your group is into.
+          The site builds a full-screen lesson in seconds: a story to hook them,
+          a build to work on, and a dramatic test to finish.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="generator.html">Build a lesson</a>
+          <a class="btn btn-ghost" href="library.html">Browse the library</a>
+        </div>
+        <dl class="stats">
+          <div><dt>60</dt><dd>themed lessons</dd></div>
+          <div><dt>4</dt><dd>age groups, 5&ndash;21</dd></div>
+          <div><dt>5</dt><dd>theme packs</dd></div>
+        </dl>
+      </div>
+
+      <!-- Polaroid stack: swap the drawings for real camp photos (see README) -->
+      <div class="hero-art" aria-hidden="true">
+        <figure class="polaroid p1">
+          <div class="photo photo-red">
+            <svg viewBox="0 0 120 80"><path d="M6 60h108M18 60V38M102 60V38M18 38c14-22 30-22 42 0 12-22 28-22 42 0M30 60V46M44 60V42M60 60V38M76 60V42M90 60V46" /></svg>
+          </div>
+          <figcaption>Bridge Showdown</figcaption>
+        </figure>
+        <figure class="polaroid p2">
+          <div class="photo photo-yellow">
+            <svg viewBox="0 0 120 80"><path d="M40 72h40M46 72L60 10l14 62M50 54h20M54 36h12M60 10v-4" /></svg>
+          </div>
+          <figcaption>Tallest Tower Wins</figcaption>
+        </figure>
+        <figure class="polaroid p3">
+          <div class="photo photo-blue">
+            <svg viewBox="0 0 120 80"><path d="M50 8h20M54 8v20L36 66c-2 5 1 8 6 8h36c5 0 8-3 6-8L66 28V8M44 52h32" /><circle cx="56" cy="62" r="3"/><circle cx="66" cy="58" r="2"/></svg>
+          </div>
+          <figcaption>Lab Lightning Round</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section problem" id="why">
+      <div class="section-head">
+        <p class="eyebrow">Why this exists</p>
+        <h2>Camp lessons were built for one kind of kid.</h2>
+      </div>
+      <ol class="problem-list">
+        <li>
+          <span class="num">01</span>
+          <h3>Too young for the teens</h3>
+          <p>Most lessons were written for little kids. A 16-year-old building the same straw bridge as a 7-year-old checks out fast.</p>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <h3>Same lesson, every summer</h3>
+          <p>Returning campers have seen it before. Without a way to mix things up, the surprise is gone by week one.</p>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <h3>It feels like school</h3>
+          <p>Worksheets and lectures belong in September. Summer should be loud, visual and a little bit competitive.</p>
+        </li>
+        <li>
+          <span class="num">04</span>
+          <h3>One story for every group</h3>
+          <p>Campers bring different interests. A lesson framed around their world lands harder than one framed around nobody&rsquo;s.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ HOW A LESSON WORKS (flip cards) ============ -->
+    <section class="section how" id="how">
+      <div class="section-head">
+        <p class="eyebrow">Every lesson, three acts</p>
+        <h2>Hook. Mission. Showdown.</h2>
+        <p class="section-sub">Hover or tap a card to see what happens in each act.</p>
+      </div>
+      <div class="acts">
+        <button class="act" type="button">
+          <span class="act-inner">
+            <span class="act-front">
+              <span class="act-step">Act 1</span>
+              <span class="act-title">Hook</span>
+              <span class="act-time">5 min</span>
+            </span>
+            <span class="act-back">
+              A short story and a big visual. A city needs a bridge before the
+              championship parade, and the old one just failed inspection.
+            </span>
+          </span>
+        </button>
+        <button class="act" type="button">
+          <span class="act-inner">
+            <span class="act-front">
+              <span class="act-step">Act 2</span>
+              <span class="act-title">Mission</span>
+              <span class="act-time">30&ndash;45 min</span>
+            </span>
+            <span class="act-back">
+              Teams build or experiment. Older groups get a budget, a materials
+              price list, and have to predict how their design will do.
+            </span>
+          </span>
+        </button>
+        <button class="act" type="button">
+          <span class="act-inner">
+            <span class="act-front">
+              <span class="act-step">Act 3</span>
+              <span class="act-title">Showdown</span>
+              <span class="act-time">10 min</span>
+            </span>
+            <span class="act-back">
+              The dramatic test: weights pile on, towers face the fan. Then a
+              quick talk-back on what worked and what each team would change.
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ THEME PACKS (interactive demo) ============ -->
+    <section class="section themes" id="themes">
+      <div class="section-head">
+        <p class="eyebrow">Theme packs</p>
+        <h2>Same mission. Their world.</h2>
+        <p class="section-sub">
+          The counselor picks what the group is into and the lesson re-skins itself.
+          Themes follow interests, never race. Try it:
+        </p>
+      </div>
+
+      <div class="theme-demo">
+        <div class="chips" role="tablist" aria-label="Pick a theme">
+          <button class="chip is-active" role="tab" aria-selected="true" data-theme="sports">Sports</button>
+          <button class="chip" role="tab" aria-selected="false" data-theme="music">Music</button>
+          <button class="chip" role="tab" aria-selected="false" data-theme="gaming">Gaming</button>
+          <button class="chip" role="tab" aria-selected="false" data-theme="neighborhood">Neighborhood</button>
+          <button class="chip" role="tab" aria-selected="false" data-theme="heroes">Heroes &amp; Anime</button>
+        </div>
+
+        <article class="mission-card" id="mission-card" aria-live="polite">
+          <header>
+            <span class="tag">Bridges &middot; Ages 9&ndash;12</span>
+            <h3 id="m-title">Parade Day Bridge</h3>
+          </header>
+          <p class="m-hook" id="m-hook">
+            The championship parade crosses the river tomorrow, and the old bridge
+            just failed inspection. Your team has 30 minutes to build one that
+            holds the trophy float.
+          </p>
+          <div class="m-meta">
+            <div>
+              <span class="m-label">Mission</span>
+              <span>Paper-and-tape bridge spanning 30&nbsp;cm</span>
+            </div>
+            <div>
+              <span class="m-label">Showdown</span>
+              <span id="m-show">Load the &ldquo;float&rdquo; one coin at a time</span>
+            </div>
+            <div>
+              <span class="m-label">Featured engineer</span>
+              <span id="m-person">Emily Warren Roebling</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ AGE LADDER ============ -->
+    <section class="section ages" id="ages">
+      <div class="section-head">
+        <p class="eyebrow">Grows with the camper</p>
+        <h2>One topic, four levels of challenge.</h2>
+      </div>
+      <div class="ladder">
+        <div class="rung r1">
+          <span class="age">5&ndash;8</span>
+          <h3>Build &amp; play</h3>
+          <p>Hands-on, big materials, one clear goal. Celebrate every bridge that stands.</p>
+        </div>
+        <div class="rung r2">
+          <span class="age">9&ndash;12</span>
+          <h3>Predict &amp; test</h3>
+          <p>Guess first, then test. Compare designs and spot why one beat the other.</p>
+        </div>
+        <div class="rung r3">
+          <span class="age">13&ndash;17</span>
+          <h3>Budget &amp; compete</h3>
+          <p>Materials cost money. Teams balance strength against spend and track results.</p>
+        </div>
+        <div class="rung r4">
+          <span class="age">18+</span>
+          <h3>Design &amp; pitch</h3>
+          <p>Real constraints, written specs, and a pitch to a panel, like an engineering firm.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO USE ============ -->
+    <section class="section use" id="use">
+      <div class="section-head">
+        <p class="eyebrow">For counselors</p>
+        <h2>From zero to running a lesson in a minute.</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Tell it about your group</h3>
+          <p>Age group, topic, what they&rsquo;re into, how long you have and how many campers.</p>
+        </li>
+        <li>
+          <h3>Get a fresh lesson</h3>
+          <p>The generator mixes story, mission and showdown pieces, and skips ones your browser has already shown.</p>
+        </li>
+        <li>
+          <h3>Present it full-screen</h3>
+          <p>Hit play. Arrow keys or clicks move through the slides. No PowerPoint needed.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PITCH ============ -->
+    <section class="section pitch" id="next">
+      <div class="pitch-card">
+        <div>
+          <p class="eyebrow eyebrow-light">What funding unlocks</p>
+          <h2>This demo runs for free today. With support, it grows up.</h2>
+        </div>
+        <ul class="roadmap">
+          <li><strong>Counselor accounts</strong> so each camp keeps its own lesson history.</li>
+          <li><strong>AI-written lessons</strong> on demand for any topic and theme.</li>
+          <li><strong>Easier / harder buttons</strong> to adjust a lesson on the spot.</li>
+          <li><strong>Camper ratings</strong> so the best lessons rise to the top.</li>
+          <li><strong>New topics</strong> starting with coding and tech.</li>
+        </ul>
+        <a class="btn btn-yellow" href="generator.html">Try the demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>STEM Lesson Gallery &middot; a demo by a CMU STEM Ambassador.</p>
+    <p class="fine">Independent student project. Not an official Carnegie Mellon University website.</p>
+  </footer>
+
+  <script>
+    // Theme pack demo: one mission, re-skinned per interest.
+    // Later this data will come from data/lessons.json instead of living here.
+    const themes = {
+      sports: {
+        title: "Parade Day Bridge",
+        hook: "The championship parade crosses the river tomorrow, and the old bridge just failed inspection. Your team has 30 minutes to build one that holds the trophy float.",
+        show: "Load the “float” one coin at a time",
+        person: "Emily Warren Roebling"
+      },
+      music: {
+        title: "Main Stage Walkway",
+        hook: "The headliner’s entrance is a bridge over the crowd, and the stage crew just quit. Build a walkway strong enough for the star and their gear.",
+        show: "Stack the “amp” until the walkway drops the beat",
+        person: "Fazlur Rahman Khan"
+      },
+      gaming: {
+        title: "Level 7: The Gap",
+        hook: "Your squad is one jump from the final boss, but the bridge spawns broken. Craft a crossing before the timer runs out.",
+        show: "Boss-fight weight test, one power-up at a time",
+        person: "Jerry Lawson"
+      },
+      neighborhood: {
+        title: "Bridge to the Hill",
+        hook: "Pittsburgh is the city of bridges. A new walkway could reconnect the Hill District to downtown. Your crew gets the contract.",
+        show: "Community test day: load it like rush hour",
+        person: "Archie Alexander"
+      },
+      heroes: {
+        title: "Rescue Span",
+        hook: "A villain snapped the only bridge out of the city and civilians are stranded. Heroes can’t fly everyone out. Engineers can build.",
+        show: "Evacuation test: how many citizens can it hold?",
+        person: "Othmar Ammann"
+      }
+    };
+
+    const chips = document.querySelectorAll(".chip");
+    const card = document.getElementById("mission-card");
+
+    chips.forEach(chip => {
+      chip.addEventListener("click", () => {
+        const t = themes[chip.dataset.theme];
+        chips.forEach(c => { c.classList.remove("is-active"); c.setAttribute("aria-selected", "false"); });
+        chip.classList.add("is-active");
+        chip.setAttribute("aria-selected", "true");
+
+        card.classList.add("is-swapping");
+        setTimeout(() => {
+          document.getElementById("m-title").textContent = t.title;
+          document.getElementById("m-hook").textContent = t.hook;
+          document.getElementById("m-show").textContent = t.show;
+          document.getElementById("m-person").textContent = t.person;
+          card.dataset.theme = chip.dataset.theme;
+          card.classList.remove("is-swapping");
+        }, 180);
+      });
+    });
+
+    // Flip cards: tap to flip on touch screens (hover handles desktop).
+    document.querySelectorAll(".act").forEach(a =>
+      a.addEventListener("click", () => a.classList.toggle("is-flipped"))
+    );
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson Library · STEM Lesson Gallery</title>
+  <meta name="description" content="Browse 60 themed STEM camp lessons by topic, age group and theme.">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="brand" href="index.html" aria-label="STEM Lesson Gallery home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">STEM Lesson Gallery</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="library.html" aria-current="page">Library</a>
+      <a class="nav-cta" href="generator.html">Build a lesson</a>
+    </nav>
+  </header>
+
+  <main class="library">
+    <section class="lib-head">
+      <p class="eyebrow">The library</p>
+      <h1>Pick a lesson. Hit play.</h1>
+      <p class="section-sub">Every mission comes in five themes. Filter by what you&rsquo;re teaching, who&rsquo;s in the room and what they&rsquo;re into.</p>
+    </section>
+
+    <!-- Filters: each group is a set of radio-style buttons -->
+    <section class="filters" aria-label="Filter lessons">
+      <div class="filter-group" data-filter="topic">
+        <span class="filter-label">Topic</span>
+        <div class="filter-options"></div>
+      </div>
+      <div class="filter-group" data-filter="age">
+        <span class="filter-label">Age group</span>
+        <div class="filter-options"></div>
+      </div>
+      <div class="filter-group" data-filter="theme">
+        <span class="filter-label">Theme</span>
+        <div class="filter-options"></div>
+      </div>
+      <div class="filter-foot">
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <button class="link-btn" type="button" id="clear-filters" hidden>Clear filters</button>
+      </div>
+    </section>
+
+    <!-- Rows of cards get built here by js/library.js -->
+    <div id="rows"></div>
+
+    <p class="empty" id="empty" hidden>
+      No lessons match those filters yet. Try clearing one, or
+      <a href="generator.html">build a fresh lesson</a>.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <p>STEM Lesson Gallery &middot; a demo by a CMU STEM Ambassador.</p>
+    <p class="fine">Independent student project. Not an official Carnegie Mellon University website.</p>
+  </footer>
+
+  <script src="js/lessons.js"></script>
+  <script src="js/library.js"></script>
+</body>
+</html>

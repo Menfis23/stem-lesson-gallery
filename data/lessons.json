@@ -1,0 +1,265 @@
+{
+  "_about": "Lesson pieces for STEM Lesson Gallery. A lesson = one mission + one theme skin + one featured person. 12 missions x 5 themes = 60 lessons. Source: STEM Lesson Generator - Lesson Library Draft.",
+
+  "topics": [
+    { "id": "bridges", "name": "Bridges" },
+    { "id": "towers", "name": "Towers" },
+    { "id": "science", "name": "Science Experiments" }
+  ],
+
+  "ages": [
+    { "id": "5-8", "name": "Ages 5–8", "minutes": 30 },
+    { "id": "9-12", "name": "Ages 9–12", "minutes": 45 },
+    { "id": "13-17", "name": "Ages 13–17", "minutes": 60 },
+    { "id": "18+", "name": "Ages 18+", "minutes": 75 }
+  ],
+
+  "themes": [
+    { "id": "sports", "name": "Sports" },
+    { "id": "music", "name": "Music" },
+    { "id": "gaming", "name": "Gaming" },
+    { "id": "neighborhood", "name": "Neighborhood" },
+    { "id": "heroes", "name": "Heroes & Anime" }
+  ],
+
+  "people": [
+    { "id": "roebling", "name": "Emily Warren Roebling", "role": "Bridge engineer", "topic": "bridges",
+      "fact": "Led the day-to-day work on the Brooklyn Bridge after her husband fell ill, and was the first person to cross it when it opened in 1883." },
+    { "id": "alexander", "name": "Archie Alexander", "role": "Civil engineer", "topic": "bridges",
+      "fact": "A Black engineer whose firm designed bridges and highways, including the Tidal Basin Bridge and the Whitehurst Freeway in Washington, D.C." },
+    { "id": "ammann", "name": "Othmar Ammann", "role": "Bridge engineer", "topic": "bridges",
+      "fact": "Swiss-American engineer behind New York's George Washington Bridge and Verrazzano-Narrows Bridge." },
+    { "id": "ferris", "name": "George Ferris", "role": "Bridge engineer", "topic": "bridges",
+      "fact": "A Pittsburgh bridge engineer who invented the Ferris wheel for the 1893 World's Fair in Chicago." },
+    { "id": "hadid", "name": "Zaha Hadid", "role": "Architect", "topic": "bridges",
+      "fact": "Iraqi-British architect who designed the wave-shaped Sheikh Zayed Bridge in Abu Dhabi, and the first woman to win the Pritzker Prize." },
+
+    { "id": "khan", "name": "Fazlur Rahman Khan", "role": "Structural engineer", "topic": "towers",
+      "fact": "Bangladeshi-American engineer who invented the 'tube' system that let skyscrapers like Chicago's Willis Tower rise so tall." },
+    { "id": "pei", "name": "I. M. Pei", "role": "Architect", "topic": "towers",
+      "fact": "Chinese-American architect who designed the Bank of China Tower in Hong Kong and the glass pyramid at the Louvre." },
+    { "id": "sklarek", "name": "Norma Merrick Sklarek", "role": "Architect", "topic": "towers",
+      "fact": "The first Black woman licensed as an architect in New York and California. She helped lead Terminal One at Los Angeles International Airport." },
+    { "id": "eiffel", "name": "Gustave Eiffel", "role": "Engineer", "topic": "towers",
+      "fact": "His company built the Eiffel Tower in 1889 and designed the iron skeleton inside the Statue of Liberty." },
+    { "id": "hadid-t", "name": "Zaha Hadid", "role": "Architect", "topic": "towers",
+      "fact": "Iraqi-British architect known for curving towers and buildings that look like they are moving." },
+
+    { "id": "julian", "name": "Percy Julian", "role": "Chemist", "topic": "science",
+      "fact": "Made medicines from soybeans and invented a firefighting foam used by the U.S. Navy." },
+    { "id": "ball", "name": "Alice Ball", "role": "Chemist", "topic": "science",
+      "fact": "Developed the first effective injectable treatment for leprosy, at age 23." },
+    { "id": "jemison", "name": "Mae Jemison", "role": "Astronaut and doctor", "topic": "science",
+      "fact": "Became the first African American woman in space in 1992, aboard the Space Shuttle Endeavour." },
+    { "id": "wu", "name": "Chien-Shiung Wu", "role": "Physicist", "topic": "science",
+      "fact": "Her careful 1956 experiment proved that a 'law' of physics everyone believed was wrong." },
+    { "id": "molina", "name": "Mario Molina", "role": "Chemist", "topic": "science",
+      "fact": "Mexican chemist who showed that certain sprays were damaging Earth's ozone layer, and won the Nobel Prize in 1995." },
+    { "id": "carson", "name": "Rachel Carson", "role": "Biologist", "topic": "science",
+      "fact": "Grew up in Springdale, near Pittsburgh. Her book Silent Spring helped start the modern environmental movement." },
+    { "id": "johnson", "name": "Katherine Johnson", "role": "Mathematician", "topic": "science",
+      "fact": "Calculated the flight paths that got NASA astronauts into orbit and safely home." }
+  ],
+
+  "missions": [
+    {
+      "id": "br-58", "topic": "bridges", "age": "5-8",
+      "title": "Rescue the Stranded Animals",
+      "hook": "Stuffed animals are stuck on an \"island\" across a paper river full of cardboard sharks. The counselor reads a quick rescue message from the animals.",
+      "mission": "Build a popsicle-stick and tape bridge so the animals can cross.",
+      "showdown": "Each team walks a stuffed animal across while everyone counts down. Bonus: can it carry two animals?",
+      "materials": ["Popsicle sticks", "Masking tape", "Stuffed animals", "Blue paper (river)", "Cardboard sharks"],
+      "talkback": ["What made your bridge strong?", "What would you change next time?"]
+    },
+    {
+      "id": "br-912", "topic": "bridges", "age": "9-12",
+      "title": "Monster Truck Crossing",
+      "hook": "Show a short video of a monster truck smashing over obstacles. \"Your bridge is next.\"",
+      "mission": "Build a straw or craft-stick bridge across a gap between two desks.",
+      "showdown": "Load toy trucks or a cup of pennies until it collapses. Leaderboard on the whiteboard for most weight held.",
+      "materials": ["Straws or craft sticks", "Tape", "Two desks", "Toy trucks or a cup", "Pennies"],
+      "talkback": ["Where did your bridge break first, and why there?", "Which design on the leaderboard would you copy?"]
+    },
+    {
+      "id": "br-1317", "topic": "bridges", "age": "13-17",
+      "title": "Bridge Tycoon",
+      "hook": "Slow-motion clip of the Tacoma Narrows Bridge twisting and falling. \"Don't be that engineer.\"",
+      "mission": "Teams get fake money to buy sticks, tape and string from a camp \"store,\" then design the best bridge for the price.",
+      "showdown": "Live load test with a bucket and sand or weights. Winner = most weight per dollar spent. Film the collapse in slow motion on a phone.",
+      "materials": ["Craft sticks", "Tape", "String", "Fake money", "Price list", "Bucket and sand or weights", "Phone for slow-mo"],
+      "talkback": ["Was the strongest bridge also the best value?", "What would you buy differently with the same budget?"]
+    },
+    {
+      "id": "br-18", "topic": "bridges", "age": "18+",
+      "title": "City Contract Pitch",
+      "hook": "Pittsburgh is the City of Bridges. Teams are engineering firms competing for a contract.",
+      "mission": "Sketch a design, predict how much weight it holds, then build it.",
+      "showdown": "Quick 1-minute pitch, then the load test. Closest prediction and strongest bridge both win prizes.",
+      "materials": ["Sketch paper", "Craft sticks", "Tape", "String", "Weights", "Scale"],
+      "talkback": ["How close was your prediction, and what threw it off?", "What would a real city ask that we skipped?"]
+    },
+
+    {
+      "id": "tw-58", "topic": "towers", "age": "5-8",
+      "title": "Tallest Tower Party",
+      "hook": "Show a picture of the tallest building in the world next to a picture of a giraffe. \"Can we build taller than a giraffe's knee?\"",
+      "mission": "Build towers with paper cups, blocks, or marshmallows and toothpicks.",
+      "showdown": "The counselor knocks them down with a soft-ball \"wrecking ball\" at the end, and kids cheer for the last tower standing.",
+      "materials": ["Paper cups", "Blocks", "Marshmallows", "Toothpicks", "Soft ball"],
+      "talkback": ["Why did the last tower stay up?", "Is a wide bottom or a tall top more important?"]
+    },
+    {
+      "id": "tw-912", "topic": "towers", "age": "9-12",
+      "title": "Marshmallow Mountain",
+      "hook": "\"A marshmallow wants to see the view from the top.\" Timer on the big screen.",
+      "mission": "Spaghetti, tape and string tower with a marshmallow on top, 18 minutes.",
+      "showdown": "Measure live with a tape measure while the room counts. Tallest standing tower wins.",
+      "materials": ["Dry spaghetti", "Tape", "String", "Marshmallows", "Tape measure", "Timer"],
+      "talkback": ["When did you put the marshmallow on, and did that matter?", "What shape held the most height?"]
+    },
+    {
+      "id": "tw-1317", "topic": "towers", "age": "13-17",
+      "title": "Earthquake City",
+      "hook": "Video of a shake table test on a real skyscraper model.",
+      "mission": "Build a straw or index-card tower that must hold a small toy \"family\" on top.",
+      "showdown": "Earthquake time: a shake table (tray on tennis balls) cranked up level by level. Fan for a hurricane round.",
+      "materials": ["Straws or index cards", "Tape", "Small toy figures", "Tray", "Tennis balls", "Fan"],
+      "talkback": ["Which level of shaking broke the most towers?", "How do real buildings stay up in earthquakes?"]
+    },
+    {
+      "id": "tw-18", "topic": "towers", "age": "18+",
+      "title": "Skyline Challenge",
+      "hook": "Show the Eiffel Tower and Burj Khalifa side by side. What makes each one stand?",
+      "mission": "Hit a target height with limited materials, and the tower must survive a wind test.",
+      "showdown": "Fan wind test plus a quick team pitch of their design idea.",
+      "materials": ["Limited kit per team (straws, cards, tape)", "Tape measure", "Fan"],
+      "talkback": ["What tradeoff did you make between height and strength?", "Which real tower inspired your design?"]
+    },
+
+    {
+      "id": "sc-58", "topic": "science", "age": "5-8",
+      "title": "Elephant Toothpaste",
+      "hook": "\"Have you ever seen an elephant brush its teeth?\" Show a picture of a giant elephant.",
+      "mission": "Counselor-led foam explosion with kid-safe ingredients (yeast, dish soap, low-strength peroxide). Kids add food coloring and predict how high it goes.",
+      "showdown": "Countdown, then foam eruption. Kids touch the warm foam and say what they noticed.",
+      "materials": ["Bottle", "Dry yeast", "Warm water", "Dish soap", "3% hydrogen peroxide", "Food coloring", "Tray", "Safety goggles"],
+      "talkback": ["Why do you think the foam felt warm?", "Was your guess too high or too low?"]
+    },
+    {
+      "id": "sc-912", "topic": "science", "age": "9-12",
+      "title": "Egg Drop Rescue",
+      "hook": "Video of a Mars rover landing. \"Your egg is the astronaut.\"",
+      "mission": "Build a lander with straws, paper, cups and tape to protect a raw egg.",
+      "showdown": "Drop from a ladder or stairwell with the whole group watching. Crack check live.",
+      "materials": ["Raw eggs", "Straws", "Paper", "Cups", "Tape", "Ladder or stairwell", "Tarp"],
+      "talkback": ["What slowed your egg down or softened the landing?", "How is this like landing on Mars?"]
+    },
+    {
+      "id": "sc-1317", "topic": "science", "age": "13-17",
+      "title": "Color-Changing Mystery",
+      "hook": "The counselor pours \"water\" into cups and it turns pink, purple and green like magic.",
+      "mission": "Make red cabbage juice and test mystery liquids to figure out the trick.",
+      "showdown": "Teams race to solve the \"mystery potion\" challenge first.",
+      "materials": ["Red cabbage juice", "Clear cups", "Vinegar", "Baking soda water", "Lemon juice", "Other mystery liquids"],
+      "talkback": ["What do the colors tell you about each liquid?", "Where else do acids and bases show up in your day?"]
+    },
+    {
+      "id": "sc-18", "topic": "science", "age": "18+",
+      "title": "Mythbusters Lab",
+      "hook": "Clip of a famous myth: does Mentos in soda really explode?",
+      "mission": "Teams pick a myth and design a fair test with a control and repeat trials.",
+      "showdown": "Run the tests outside and vote: busted, plausible or confirmed.",
+      "materials": ["Myth cards", "Diet soda", "Mentos", "Measuring tape", "Notebook for results"],
+      "talkback": ["What made your test fair?", "How many trials would convince a skeptic?"]
+    }
+  ],
+
+  "skins": {
+    "br-58": {
+      "sports": { "title": "Mascots Stranded Before Kickoff", "hook": "The team mascots are stuck on an island before the big game, and cardboard sharks are circling. Build a bridge so they make it to kickoff." },
+      "music": { "title": "Get the Band to the Stage", "hook": "The stuffed-animal band is stuck across the river and the concert starts soon. Build a bridge to get the band on stage." },
+      "gaming": { "title": "Level 1: Animal Rescue", "hook": "Your stuffed-animal players spawned on an island surrounded by shark enemies. Build a bridge to clear level one." },
+      "neighborhood": { "title": "A Bridge Home", "hook": "Pittsburgh is full of bridges, and today our stuffed animals need one more to get home across the river." },
+      "heroes": { "title": "Sidekick Rescue", "hook": "The heroes' animal sidekicks are trapped on an island by cardboard sharks. The heroes need a bridge, fast." }
+    },
+    "br-912": {
+      "sports": { "title": "Team Bus Crossing", "hook": "The team bus has to cross the river to make the championship. Your bridge has to hold the whole team." },
+      "music": { "title": "Tour Bus Crossing", "hook": "The tour bus is packed with speakers and the show is across the gap. Will your bridge hold the gear?" },
+      "gaming": { "title": "Clear the Level", "hook": "Real-life level: the only way to the next stage is across your bridge. Load it until it breaks." },
+      "neighborhood": { "title": "Hill District Connector", "hook": "Connect two blocks in the Hill District with a bridge strong enough for buses and delivery trucks." },
+      "heroes": { "title": "Rescue Truck Crossing", "hook": "A villain weakened the city bridge. Build a new one strong enough for the rescue trucks." }
+    },
+    "br-1317": {
+      "sports": { "title": "Stadium Bridge Tycoon", "hook": "The city wants a walking bridge to the new stadium. You get a budget. Most strength per dollar wins the deal." },
+      "music": { "title": "Festival Bridge Tycoon", "hook": "A music festival needs a bridge over the creek to the main stage. Crowds are heavy, so spend your budget wisely." },
+      "gaming": { "title": "Bridge Tycoon: High Score", "hook": "Like a building sim, but real. Buy parts from the store, build, and beat the high score for weight per dollar." },
+      "neighborhood": { "title": "Three Rivers Tycoon", "hook": "Pittsburgh sits where three rivers meet, so bridges are big business. Win the contract with the best bridge for the price." },
+      "heroes": { "title": "Hero Budget Build", "hook": "The hero team's funding just got cut. Build the strongest bridge you can on a tight budget before the villain strikes." }
+    },
+    "br-18": {
+      "sports": { "title": "Stadium Contract Pitch", "hook": "Your firm is bidding to build the bridge fans will cross on game day. Pitch it, predict it, prove it." },
+      "music": { "title": "Amphitheater Contract Pitch", "hook": "A new outdoor concert venue needs an entrance bridge. Pitch your design to the venue's board." },
+      "gaming": { "title": "Studio Pitch: Build the Map", "hook": "A game studio wants a real bridge model for its next open-world map. Pitch the design, then stress-test it." },
+      "neighborhood": { "title": "City of Bridges Contract", "hook": "Pittsburgh is the City of Bridges. Your firm is competing for the contract to reconnect the Hill District to downtown." },
+      "heroes": { "title": "Rebuild the City", "hook": "After the big battle, the city needs a new bridge. Hero-backed engineering firms pitch their designs to the mayor." }
+    },
+
+    "tw-58": {
+      "sports": { "title": "Mini Hoop Tower", "hook": "Can we build a tower tall enough to hold a mini basketball hoop? Taller than a giraffe's knee?" },
+      "music": { "title": "Speaker Stack Party", "hook": "Every concert needs a tall stack of speakers. Build yours before the dance party starts." },
+      "gaming": { "title": "Block Tower Challenge", "hook": "Build like your favorite block game, but with real cups and blocks. Can it survive the wrecking ball?" },
+      "neighborhood": { "title": "Build Our Skyline", "hook": "Look at the tall buildings in downtown Pittsburgh. Can we build our own skyline right here in the room?" },
+      "heroes": { "title": "Hero Lookout Tower", "hook": "Heroes need a tall lookout to spot trouble. Build it before the wrecking-ball villain attacks." }
+    },
+    "tw-912": {
+      "sports": { "title": "Marshmallow Podium", "hook": "The marshmallow just won gold and wants the highest podium ever. 18 minutes on the clock." },
+      "music": { "title": "Top of the Charts", "hook": "The marshmallow wants to hit number one. Get it as high as possible in 18 minutes." },
+      "gaming": { "title": "High Score Tower", "hook": "Your marshmallow avatar needs max height for the high score. The timer is on the big screen." },
+      "neighborhood": { "title": "Mount Washington View", "hook": "From Mount Washington you can see all of downtown Pittsburgh. Give the marshmallow its own lookout." },
+      "heroes": { "title": "Rooftop Hero", "hook": "Every hero needs a rooftop pose. Get the marshmallow hero as high as you can in 18 minutes." }
+    },
+    "tw-1317": {
+      "sports": { "title": "Arena Shake Test", "hook": "When a stadium crowd jumps, the building moves. Keep the fans on top of your tower safe through every shake level." },
+      "music": { "title": "Bass Drop Tower", "hook": "Build the tallest speaker tower that survives the bass drop. The shake table is the subwoofer." },
+      "gaming": { "title": "Boss Tower", "hook": "Boss fight: your tower must survive three earthquake levels, each harder than the last." },
+      "neighborhood": { "title": "Steel City Shake Test", "hook": "Pittsburgh is the Steel City. Prove your tower is just as tough when the ground starts shaking." },
+      "heroes": { "title": "Villain Quake Defense", "hook": "A villain's quake machine is shaking the city. Protect the toy family on top of your tower." }
+    },
+    "tw-18": {
+      "sports": { "title": "Stadium Light Towers", "hook": "Night games need light towers that stand up to wind. Hit the target height, survive the fan, and pitch your design." },
+      "music": { "title": "Festival Stage Tower", "hook": "Outdoor festivals need towers for lights and speakers that won't blow over. Design one and pitch it." },
+      "gaming": { "title": "Real-World Build Mode", "hook": "No cheat codes: hit the height target with limited materials and survive the wind test." },
+      "neighborhood": { "title": "New Pittsburgh Landmark", "hook": "Design a new landmark tower for Pittsburgh that could stand next to the best of the skyline." },
+      "heroes": { "title": "Hero Headquarters", "hook": "Build a hero headquarters that survives a villain attack. The villain's weapon: a very big fan." }
+    },
+
+    "sc-58": {
+      "sports": { "title": "Victory Foam", "hook": "When a team wins, the celebration explodes. Let's make a victory foam eruption." },
+      "music": { "title": "Foam Drop", "hook": "Count down like the beat before the drop, then watch the foam explode." },
+      "gaming": { "title": "Power-Up Potion", "hook": "Mix the power-up potion and watch it level up right out of the bottle." },
+      "neighborhood": { "title": "Zoo Elephant Toothpaste", "hook": "Pittsburgh's zoo has elephants. How would one brush its giant teeth?" },
+      "heroes": { "title": "Power-Up Eruption", "hook": "Every hero has a power-up moment. Today ours is a giant foam eruption." }
+    },
+    "sc-912": {
+      "sports": { "title": "Trophy Egg Drop", "hook": "Protect the star player's \"trophy egg\" from a big drop. One crack and the season's over." },
+      "music": { "title": "Rock Star Entrance", "hook": "The egg is a rock star making a big entrance from above the stage. Land it without a crack." },
+      "gaming": { "title": "One Life Left", "hook": "Your egg has one life and no respawns. Build a lander that gets it down safe." },
+      "neighborhood": { "title": "Incline Egg Drop", "hook": "Pittsburgh's inclines carry riders safely down Mount Washington. Your lander has to do the same for an egg." },
+      "heroes": { "title": "Hero Landing", "hook": "Every hero lands from high up. Make sure your egg hero sticks the landing." }
+    },
+    "sc-1317": {
+      "sports": { "title": "Sports Drink Lab", "hook": "Which sports drinks are acids? Test them with cabbage juice and crack the case." },
+      "music": { "title": "Light Show Potions", "hook": "Make every cup a different color, like a concert light show. Then figure out the trick." },
+      "gaming": { "title": "Potion Lab", "hook": "Mix colors to unlock the next level. Only teams who crack the potion code advance." },
+      "neighborhood": { "title": "Local Water Lab", "hook": "Test which local waters and drinks are acids or bases. What's really in what we drink?" },
+      "heroes": { "title": "Villain's Mystery Potions", "hook": "A villain swapped the city's drinks with mystery potions. Use cabbage juice to find out which are which." }
+    },
+    "sc-18": {
+      "sports": { "title": "Sports Myths Tested", "hook": "Do new sneakers really make you jump higher? Pick a sports myth and test it fairly." },
+      "music": { "title": "Music Myths Tested", "hook": "Does music help plants grow? Pick a music myth and design a fair test." },
+      "gaming": { "title": "Gaming Myths Tested", "hook": "Does blowing on a game cartridge actually fix it? Pick a gaming myth and test it." },
+      "neighborhood": { "title": "Neighborhood Myths Tested", "hook": "Everyone has heard a local claim, like which store's soda fizzes the most. Pick one and test it like a scientist." },
+      "heroes": { "title": "Superpower Science", "hook": "Could a hero really do that? Pick a movie-stunt myth and test the science at small scale." }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson · STEM Lesson Gallery</title>
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="show-body">
+
+  <div class="show" id="show">
+    <!-- Top bar -->
+    <header class="show-top">
+      <a class="show-exit" href="library.html" aria-label="Back to the library">
+        <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+        <span>Library</span>
+      </a>
+      <p class="show-title" id="show-title"></p>
+      <button class="show-icon-btn" id="fullscreen" type="button" aria-label="Full screen (F)">
+        <svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      </button>
+    </header>
+
+    <!-- Slides get built here by js/slideshow.js -->
+    <main class="stage" id="stage" aria-live="polite"></main>
+
+    <!-- Bottom bar: act progress + controls -->
+    <footer class="show-bottom">
+      <button class="nav-btn" id="prev" type="button" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <div class="progress" id="progress"></div>
+      <button class="nav-btn nav-next" id="next" type="button" aria-label="Next slide">
+        <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </footer>
+  </div>
+
+  <!-- Full-screen 3-2-1 overlay for the Showdown -->
+  <div class="countdown" id="countdown" hidden><span id="countdown-num"></span></div>
+
+  <script src="js/lessons.js"></script>
+  <script src="js/slideshow.js"></script>
+</body>
+</html>
