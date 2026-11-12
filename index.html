@@ -175,27 +175,29 @@
         <article class="mission-card" id="mission-card" aria-live="polite">
           <header>
             <span class="tag">Bridges &middot; Ages 9&ndash;12</span>
-            <h3 id="m-title">Parade Day Bridge</h3>
+            <h3 id="m-title">Team Bus Crossing</h3>
           </header>
+          <!-- This text is the Sports version, shown until data/lessons.json loads.
+               After that, every theme comes from the same data as the Library. -->
           <p class="m-hook" id="m-hook">
-            The championship parade crosses the river tomorrow, and the old bridge
-            just failed inspection. Your team has 30 minutes to build one that
-            holds the trophy float.
+            The team bus has to cross the river to make the championship.
+            Your bridge has to hold the whole team.
           </p>
           <div class="m-meta">
             <div>
               <span class="m-label">Mission</span>
-              <span>Paper-and-tape bridge spanning 30&nbsp;cm</span>
+              <span id="m-mission">Build a straw or craft-stick bridge across a gap between two desks.</span>
             </div>
             <div>
               <span class="m-label">Showdown</span>
-              <span id="m-show">Load the &ldquo;float&rdquo; one coin at a time</span>
+              <span id="m-show">Load toy trucks or a cup of pennies until it collapses. Leaderboard on the whiteboard for most weight held.</span>
             </div>
             <div>
-              <span class="m-label">Featured engineer</span>
+              <span class="m-label">Featured</span>
               <span id="m-person">Emily Warren Roebling</span>
             </div>
           </div>
+          <a class="m-link" id="m-link" href="slideshow.html?id=br-912--sports">Present this version &rarr;</a>
         </article>
       </div>
     </section>
@@ -276,59 +278,43 @@
     <p class="fine">Independent student project. Not an official Carnegie Mellon University website.</p>
   </footer>
 
+  <script src="js/lessons.js"></script>
   <script>
-    // Theme pack demo: one mission, re-skinned per interest.
-    // Later this data will come from data/lessons.json instead of living here.
-    const themes = {
-      sports: {
-        title: "Parade Day Bridge",
-        hook: "The championship parade crosses the river tomorrow, and the old bridge just failed inspection. Your team has 30 minutes to build one that holds the trophy float.",
-        show: "Load the “float” one coin at a time",
-        person: "Emily Warren Roebling"
-      },
-      music: {
-        title: "Main Stage Walkway",
-        hook: "The headliner’s entrance is a bridge over the crowd, and the stage crew just quit. Build a walkway strong enough for the star and their gear.",
-        show: "Stack the “amp” until the walkway drops the beat",
-        person: "Fazlur Rahman Khan"
-      },
-      gaming: {
-        title: "Level 7: The Gap",
-        hook: "Your squad is one jump from the final boss, but the bridge spawns broken. Craft a crossing before the timer runs out.",
-        show: "Boss-fight weight test, one power-up at a time",
-        person: "Jerry Lawson"
-      },
-      neighborhood: {
-        title: "Bridge to the Hill",
-        hook: "Pittsburgh is the city of bridges. A new walkway could reconnect the Hill District to downtown. Your crew gets the contract.",
-        show: "Community test day: load it like rush hour",
-        person: "Archie Alexander"
-      },
-      heroes: {
-        title: "Rescue Span",
-        hook: "A villain snapped the only bridge out of the city and civilians are stranded. Heroes can’t fly everyone out. Engineers can build.",
-        show: "Evacuation test: how many citizens can it hold?",
-        person: "Othmar Ammann"
-      }
-    };
-
+    // Theme pack demo: one mission (Monster Truck Crossing, ages 9-12),
+    // re-skinned per interest. The text comes from data/lessons.json,
+    // the same data the Library, Slideshow and Generator use.
+    const DEMO_MISSION = "br-912";
     const chips = document.querySelectorAll(".chip");
     const card = document.getElementById("mission-card");
+    let byTheme = {};
+
+    LessonData.load()
+      .then(data => {
+        data.lessons
+          .filter(l => l.missionId === DEMO_MISSION)
+          .forEach(l => { byTheme[l.theme] = l; });
+      })
+      .catch(() => { /* opened without a server: keep the built-in Sports text */ });
 
     chips.forEach(chip => {
       chip.addEventListener("click", () => {
-        const t = themes[chip.dataset.theme];
+        const theme = chip.dataset.theme;
+        const l = byTheme[theme];
         chips.forEach(c => { c.classList.remove("is-active"); c.setAttribute("aria-selected", "false"); });
         chip.classList.add("is-active");
         chip.setAttribute("aria-selected", "true");
 
         card.classList.add("is-swapping");
         setTimeout(() => {
-          document.getElementById("m-title").textContent = t.title;
-          document.getElementById("m-hook").textContent = t.hook;
-          document.getElementById("m-show").textContent = t.show;
-          document.getElementById("m-person").textContent = t.person;
-          card.dataset.theme = chip.dataset.theme;
+          if (l) {
+            document.getElementById("m-title").textContent = l.title;
+            document.getElementById("m-hook").textContent = l.hook;
+            document.getElementById("m-mission").textContent = l.mission;
+            document.getElementById("m-show").textContent = l.showdown;
+            document.getElementById("m-person").textContent = l.person.name + ", " + l.person.role.toLowerCase();
+            document.getElementById("m-link").href = "slideshow.html?id=" + encodeURIComponent(l.id);
+          }
+          card.dataset.theme = theme;
           card.classList.remove("is-swapping");
         }, 180);
       });

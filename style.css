@@ -1356,3 +1356,15 @@ kbd {
   .acts-list div { grid-template-columns: 1fr; gap: .1rem; }
   .plan-bar span { font-size: .7rem; padding: 0 .3rem; }
 }
+
+/* Homepage demo: link from the theme card to its slideshow */
+.m-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--red);
+  text-decoration: none;
+  border-bottom: 2px solid var(--yellow);
+}
+.m-link:hover { border-bottom-color: var(--red); }
